@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+/* NAVBAR STYLING */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+.title__list{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.title__list li:hover{
+    color: lightslategray;
+}
+
+/*SEARCHBAR STYLING*/
+.searchbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+/*PUPPIES LIST STYLING*/
+.puppies__container{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.puppies__card{
+    border: solid black 2px;
+    display: flex;
+    flex-basis: 25%;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.puppies__card:hover{
+    background-color: aliceblue;
+
+}
+
+.fixed-size {
+    flex-basis: 200px; /* Fixed size when searching */
+    height: 350px; /* Fixed height when searching */
+}
+
+/*ABOUT US STYLING*/
+.about,.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.contact{
+    background-color: black;
+    color: white;
+}
+
+
+
+/*FOR RESPONSIVENESS ADDING THE MEDIA QUERY*/
+@media screen and (max-width:700px) {
+    .puppies__card{
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+
+    
+}
